@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd" default-autowire="byName">
+
+
+	<description> SPRING-CORE </description>
+	<context:property-placeholder location="classpath:jdbc.properties" />
+	<context:component-scan base-package="com.hiveview.search.core" />
+
+	<import resource="classpath:spring/spring-db.xml" />
+	<import resource="classpath:spring/spring-redis.xml" />
+	<import resource="classpath:spring/spring-mybatis.xml" />
+	<import resource="classpath:spring/spring-elasticsearch.xml" />
+	<import resource="classpath:spring/spring-task.xml" />
+	<import resource="classpath:spring/spring-aop.xml" />
+</beans>
