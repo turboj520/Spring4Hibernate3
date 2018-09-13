@@ -1,10 +1,8 @@
 package com.keung.spring4hibernate3.modules.system.dao;
 
-import org.springframework.stereotype.Repository;
-
 import com.keung.spring4hibernate3.common.persistence.dao.BaseDao;
 import com.keung.spring4hibernate3.modules.system.entity.MtDisId;
-import com.keung.spring4hibernate3.modules.system.entity.User;
+import org.springframework.stereotype.Repository;
 
 /**
  *                   _ooOoo_
@@ -37,15 +35,14 @@ import com.keung.spring4hibernate3.modules.system.entity.User;
  *       别人笑我忒疯癫，我笑自己命太贱；  
  *       不见满街漂亮妹，哪个归得程序员？
  *
- * @Title: UserDao.java 
- * @Description: TODO(用一句话描述该文件做什么) 
+ * @Title: UserDao.java
+ * @Description: TODO(用一句话描述该文件做什么)
  * @author mac keung_java@126.com
  * @email keung_java@126.com
  * @date 2016年3月19日 下午9:23:06 
  */
 
 @Repository
-public class MtDisIdDao extends BaseDao<MtDisId>
-{
+public class MtDisIdDao extends BaseDao<MtDisId> {
 
 }

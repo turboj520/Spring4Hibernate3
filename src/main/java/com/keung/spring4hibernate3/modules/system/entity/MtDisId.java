@@ -1,17 +1,16 @@
 /**
- * 
+ *
  */
 package com.keung.spring4hibernate3.modules.system.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import com.keung.spring4hibernate3.common.persistence.annotation.SessionFactoryDefine;
+import com.keung.spring4hibernate3.common.persistence.entity.DataEntity;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.hibernate.annotations.Proxy;
-
-import com.keung.spring4hibernate3.common.persistence.annotation.SessionFactoryDefine;
-import com.keung.spring4hibernate3.common.persistence.entity.DataEntity;
 
 /**
  *                   _ooOoo_
@@ -44,7 +43,7 @@ import com.keung.spring4hibernate3.common.persistence.entity.DataEntity;
  *       别人笑我忒疯癫，我笑自己命太贱；  
  *       不见满街漂亮妹，哪个归得程序员？
  *
- * @Title: MtDisId.java 
+ * @Title: MtDisId.java
  * @description TODO
  * @author mac keung_java@126.com
  * @date 2016年3月28日 上午10:19:43 
@@ -56,27 +55,24 @@ import com.keung.spring4hibernate3.common.persistence.entity.DataEntity;
 @org.hibernate.annotations.Entity(dynamicUpdate = true)
 @SessionFactoryDefine(key = "sessionFactory")
 @Table(name = "mt_dis_dealer")
-public class MtDisId extends DataEntity
-{
+public class MtDisId extends DataEntity {
 
-	private static final long serialVersionUID = 3901040767149328272L;
+    private static final long serialVersionUID = 3901040767149328272L;
 
-	private Integer dealerId;
+    private Integer dealerId;
 
-	/**
-	 * @return the dealerId
-	 */
-	public Integer getDealerId()
-	{
-		return dealerId;
-	}
+    /**
+     * @return the dealerId
+     */
+    public Integer getDealerId() {
+        return dealerId;
+    }
 
-	/**
-	 * @param dealerId the dealerId to set
-	 */
-	public void setDealerId(Integer dealerId)
-	{
-		this.dealerId = dealerId;
-	}
+    /**
+     * @param dealerId the dealerId to set
+     */
+    public void setDealerId(Integer dealerId) {
+        this.dealerId = dealerId;
+    }
 
 }

@@ -35,34 +35,31 @@ import org.springframework.web.context.ContextLoaderListener;
  *       别人笑我忒疯癫，我笑自己命太贱；  
  *       不见满街漂亮妹，哪个归得程序员？
  *
- * @Title: MyContextListener.java 
+ * @Title: MyContextListener.java
  * @Description: WebContextLoaderListener
  * @author mac keung_java@126.com
  * @email keung_java@126.com
  * @date 2016年3月19日 下午6:53:05 
  */
-public class WebContextLoaderListener extends ContextLoaderListener
-{
+public class WebContextLoaderListener extends ContextLoaderListener {
 
-	/* (non-Javadoc)
-	 * @see org.springframework.web.context.ContextLoaderListener#contextInitialized(javax.servlet.ServletContextEvent)
-	 */
-	@Override
-	public void contextInitialized(ServletContextEvent event)
-	{
-		System.out.println("#############################################################");
-		System.out.println("##  " + "keung_java@126.com" + "  ##");
-		System.out.println("#############################################################");
-		super.contextInitialized(event);
-	}
+    /* (non-Javadoc)
+     * @see org.springframework.web.context.ContextLoaderListener#contextInitialized(javax.servlet.ServletContextEvent)
+     */
+    @Override
+    public void contextInitialized(ServletContextEvent event) {
+        System.out.println("#############################################################");
+        System.out.println("##  " + "keung_java@126.com" + "  ##");
+        System.out.println("#############################################################");
+        super.contextInitialized(event);
+    }
 
-	/* (non-Javadoc)
-	 * @see org.springframework.web.context.ContextLoaderListener#contextDestroyed(javax.servlet.ServletContextEvent)
-	 */
-	@Override
-	public void contextDestroyed(ServletContextEvent event)
-	{
-		super.contextDestroyed(event);
-	}
+    /* (non-Javadoc)
+     * @see org.springframework.web.context.ContextLoaderListener#contextDestroyed(javax.servlet.ServletContextEvent)
+     */
+    @Override
+    public void contextDestroyed(ServletContextEvent event) {
+        super.contextDestroyed(event);
+    }
 
 }

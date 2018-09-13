@@ -3,12 +3,11 @@ package com.keung.spring4hibernate3.modules.system.entity;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import com.keung.spring4hibernate3.common.persistence.annotation.SessionFactoryDefine;
+import com.keung.spring4hibernate3.common.persistence.entity.DataEntity;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.hibernate.annotations.Proxy;
-
-import com.keung.spring4hibernate3.common.persistence.annotation.SessionFactoryDefine;
-import com.keung.spring4hibernate3.common.persistence.entity.DataEntity;
 
 /**
  *                   _ooOoo_
@@ -41,8 +40,8 @@ import com.keung.spring4hibernate3.common.persistence.entity.DataEntity;
  *       别人笑我忒疯癫，我笑自己命太贱；  
  *       不见满街漂亮妹，哪个归得程序员？
  *
- * @Title: User.java 
- * @Description: TODO(用一句话描述该文件做什么) 
+ * @Title: User.java
+ * @Description:
  * @author mac keung_java@126.com
  * @email keung_java@126.com
  * @date 2016年3月19日 下午6:46:37 
@@ -55,26 +54,23 @@ import com.keung.spring4hibernate3.common.persistence.entity.DataEntity;
 @SessionFactoryDefine(key = "sessionFactory")
 //@QueryCacheKeysDefine(def = { "id", "name" }, timeout = 60000)
 @Table(name = "system_user")
-public class User extends DataEntity
-{
-	private static final long serialVersionUID = -7032021651427460905L;
+public class User extends DataEntity {
+    private static final long serialVersionUID = -7032021651427460905L;
 
-	private String name;
+    private String name;
 
-	/**
-	 * @return the name
-	 */
-	public String getName()
-	{
-		return name;
-	}
+    /**
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
 
-	/**
-	 * @param name the name to set
-	 */
-	public void setName(String name)
-	{
-		this.name = name;
-	}
+    /**
+     * @param name the name to set
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
 
 }
