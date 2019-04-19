@@ -1,1 +1,0 @@
-[ERROR][2016-03-21 17:53:16,755][org.hibernate.util.JDBCExceptionReporter]Incorrect string value: '\xE7\x90\xB3\xE7\x90\xB3' for column 'name' at row 1
